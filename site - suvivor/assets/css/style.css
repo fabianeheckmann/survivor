@@ -204,7 +204,7 @@ body {
 }
 
 .botao button {
-    margin-left: 10px;
+    margin-left: 5px;
     background-color: black;
     color: white;
     padding: 3px 7px 3px 7px;
@@ -215,6 +215,28 @@ body {
     border: 2px solid black;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.botaoEsc button {
+    margin-left: 600px;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    padding: 3px 7px 3px 7px;
+    width: auto;
+    height: 50px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botaoEsc button:hover {
+    background: rgb(189, 116, 63);
+    border: 1px solid rgb(189, 116, 63);
+    color: white;
+    transition: .3s;
 }
 
 .botao button:hover {
@@ -251,3 +273,193 @@ body {
 }
 
 
+.wall-Bioma {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    
+}
+
+.Bioma-img img{
+    height: 450px;
+}
+
+.Bioma-texto{
+    text-align: justify;
+    width: 50%;
+}
+
+.Bioma-texto h2{
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    
+}
+
+.Bioma-texto p {
+    color: black;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.wall-Indio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    
+}
+
+.Indio-img img{
+    height: 300px;
+}
+
+.Indio-texto{
+    text-align: justify;
+    width: 50%;
+}
+
+.Indio-texto h2{
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    
+}
+
+.Indio-texto p {
+    color: black;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.wall-Cura {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    
+}
+
+.Cura-img img{
+    height: 300px;
+}
+
+.Cura-texto{
+    text-align: justify;
+    width: 50%;
+}
+
+.Cura-texto h2{
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    
+}
+
+.Cura-texto p {
+    color: black;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.Cura-texto2 {
+    align-items: center;
+    text-align: center;
+}
+
+.Cura-texto2 h3{
+    text-align: center;
+    color: black;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    
+}
+
+.Cura-texto2 p {
+    color: black;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: initial;
+}
+
+.wall-QueiAm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    
+}
+
+.QueiAm-img img{
+    height: 300px;
+}
+
+.QueiAm-texto{
+    text-align: justify;
+    width: 50%;
+}
+
+.QueiAm-texto h1{
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    
+}
+
+.QueiAm-texto h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.QueiAm-texto p {
+    color: black;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.QueiAm-texto2 {
+    align-items: center;
+    margin-bottom: 70px;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: initial;
+}
+
+.QueiAm-texto2 h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+.barra {
+    background-color: black;
+    height: 20px;
+    width: 100%;
+    box-shadow: black;
+}
