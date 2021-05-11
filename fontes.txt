@@ -1,2 +1,0 @@
-verde: #949d6a
-larnja: #d97003
