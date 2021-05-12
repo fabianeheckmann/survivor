@@ -36,3 +36,7 @@
   text-decoration: none;
   transition: color .0.5s;
 }
+
+.gallery img {
+  border-radius: 20px;
+}
