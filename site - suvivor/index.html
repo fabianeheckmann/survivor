@@ -11,10 +11,17 @@
     <link rel="stylesheet" href="assets/css/gallery.theme.css">
     <link rel="stylesheet" href="assets/css/gallery.min.css">
     <link rel="stylesheet" href="assets/css/gallery.theme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="index.js"></script>
 
     <title>Survivor</title>
-
-
+    <style>
+        .myChart {
+            width: 300px;
+            height: 200px;
+            margin: 10px 20px 10px 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,7 +35,7 @@
                     <div class="item-header">
                         <ul>
                             <li><a href="sobrenos.html">Sobre Nós</a></li>
-                            <li><a href="">Notícias</a></li>
+                            <li><a href="noticias.html">Notícias</a></li>
                             <li><a href="">Como Ajudar</a></li>
                             <li><a href="">Povos</a></li>
                         </ul>
@@ -54,9 +61,20 @@
 
 
         </div>
+    </div>
+    <div class="audio">
+        <h4>listen Earth Song:</h4>
+        <audio controls>
+            <source src="assets/Michael Jackson - Earth Song (Inedit Acoustic Version) HQ & HD.mp3" type="audio/mpeg">
+            <source src="assets/Michael Jackson - Earth Song (Inedit Acoustic Version) HQ & HD.mp3" type="audio/ogg">
+            Seu navegador não suporta áudio tag.
+        </audio>
 
-        <div class="container">
 
+    </div>
+
+    <div class="container">
+        <div class="fundo">
             <div class="info">
                 <div class="wall-info">
                     <div><img src="assets/img/bannerindio1Azul.png" alt=""></div>
@@ -73,13 +91,14 @@
 
 
                         <div class="info2-img">
-                            <img src="assets/img/bannerindio2Verm.png" alt="">
+                            <img class="indio1" src="assets/img/bannerindio2Verm.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="container">
+
                 <div class="info3">
                     <div class="wall-info">
                         <div class="info3-img">
@@ -90,294 +109,54 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="container">
-            <div class="btns">
-                <div class="botao"><button onclick="mostrar_amaz()">Saber mais sobre a Amazônia</button></div>
-                <div class="botao"><button onclick="mostrar_pant()">Saber mais sobre o Pantanal</button></div>
-            </div>
+    <div class="container">
+        <div class="btns">
+            <div class="botao"><button onclick="mostrar_amaz()">Saber mais sobre a Amazônia</button></div>
+            <div class="botao"><button onclick="mostrar_pant()">Saber mais sobre o Pantanal</button></div>
         </div>
-
-        <div class="divbody">
-            <div id="items-wrapper">
-                <div id="items">
-
-                    <div id="amaz" class="item" style="display: none;">
-
-                        <div class="container">
-                            <div class="barra"></div>
-                            <div class="infoBioma">
-                                <div class="wall-all">
-                                    <div class="Bioma-img">
-                                        <img src="assets/img/mapaAmaz.png" alt="">
-                                    </div>
-                                    <div class="Bioma-texto">
-                                        <h2>O Bioma Amazônia</h2>
-                                        <p>A Amazônia é uma floresta tropical úmida que se estende pela bacia
-                                            hidrográfica do rio Amazonas, uma vasta área tropical natural, com área
-                                            de
-                                            aproximadamente 6,74 milhões km2, que se estende por oito países:
-                                            Bolívia,
-                                            Brasil, Colômbia, Equador, Guiana, Peru e Venezuela. <br>
-                                            O bioma Amazônia é quase do tamanho da bacia, com 6,7 milhões de km². A
-                                            maior parte desse bioma – 60,1% – está em território brasileiro. Para se
-                                            ter
-                                            uma ideia de sua grandiosidade, se a Amazônia fosse um país, seria o
-                                            sétimo
-                                            maior do mundo.</p><br>
-                                        <p>Amazônia abriga um número enorme de plantas e animais existentes no
-                                            planeta e
-                                            a maior parte dessas espécies sequer foi estudada pelos cientistas. <br>
-                                            Até agora, já se tem a classificação científica de pelo menos 40 mil
-                                            espécies vegetais, 427 mamíferos, 1.294 aves, 378 répteis, 427 anfíbios
-                                            e
-                                            cerca de 3 mil peixes da região. <br>
-                                            No entanto, as menores formas de vida são as que apresentam os números
-                                            mais
-                                            impressionantes: os cientistas já descreveram entre 96.660 e 128.840
-                                            espécies de invertebrados só na parte brasileira da Amazônia.
-                                        </p><br>
+    </div>
 
 
+    <div class="divbody">
+        <div id="items-wrapper">
+            <div id="items">
 
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="container">
-                            <div class="infoIndio">
-                                <div class="wall-all">
-
-                                    <div class="Indio-texto">
-                                        <h2>A riqueza cultural indígena</h2>
-                                        <p>A vida silvestre da Amazônia compartilha o espaço com cerca de 30 milhões
-                                            de
-                                            pessoas. Nessa população, incluem-se mais de 220 grupos indígenas na
-                                            Amazônia
-                                            brasileira, além de comunidades tradicionais que dependem dos recursos
-                                            naturais
-                                            para sobreviver. </p><br>
-                                        <p>
-                                            Por trás dessa incrível diversidade cultural, no entanto, descortina-se
-                                            um
-                                            cenário desolador. Apesar de habitarem uma área com uma coleção
-                                            fantástica
-                                            de
-                                            produtos e serviços naturais, muitas das populações locais continuam
-                                            vivendo
-                                            em
-                                            relativa pobreza.
-
-                                        </p>
-                                    </div>
-                                    <div class="Indio-img">
-                                        <img src="assets/img/indioAmazonia.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="container">
-                            <div class="infoCura">
-                                <div class="wall-all">
-                                    <div class="Cura-img">
-                                        <img src="assets/img/medicinalplanta.jpg" alt="">
-                                    </div>
-                                    <div class="Cura-texto">
-                                        <h2>A Floresta Amazônica pode curar você</h2>
-                                        <h3>O potencial inexplorado das plantas amazônicas</h3><br>
-
-                                        <p>Há uma ligação entre os remédios guardados nos armários de sua casa e a
-                                            vida
-                                            silvestre da Amazônia: plantas e animais servem como base para a
-                                            fabricação
-                                            de medicamentos.<br>
-                                            Durante milênios, os seres humanos utilizaram insetos, plantas e outros
-                                            organismos da região para várias finalidades, entre elas a agricultura,
-                                            vestimentas e, claro, a cura para doenças. <br>
-                                            Povos indígenas e outros grupos que vivem na floresta amazônica
-                                            aperfeiçoaram o uso de compostos químicos encontrados em plantas e
-                                            animais.
-                                            O conhecimento sobre o uso dessas plantas geralmente fica nas mãos de um
-                                            curandeiro, que por sua vez repassa a tradição para um aprendiz. Esse
-                                            processo se mantém ao longo de séculos e compõe uma parte integral da
-                                            identidade desses povos. <br>
-                                            No entanto, com o rápido desaparecimento das florestas úmidas tropicais,
-                                            a
-                                            continuidade desse conhecimento para o benefício das futuras gerações
-                                            encontra-se ameaçada. <br>
-                                        </p><br>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="container">
-                            <div class="Cura-texto2">
-
-                                <p>Os cientistas acreditam que menos de 0,5% das espécies da flora foram
-                                    detalhadamente
-                                    estudadas quanto ao seu potencial medicinal. Ao mesmo tempo em que o bioma
-                                    Amazônia está
-                                    encolhendo lentamente em tamanho, a riqueza da vida silvestre de suas florestas
-                                    também
-                                    se reduz, bem como uso potencial das plantas e animais que ainda não foram
-                                    descobertos.
-                                </p>
-                                <br><br>
-                            </div>
-                        </div>
-
-                        <div class="container">
-                            <div class="infoQueiAm">
-                                <div class="wall-QueiAm">
-
-                                    <div class="QueiAm-texto">
-                                        <h1>O que liga a floresta Amazônica, o aquecimento mundial e você?</h1>
-                                        <h2>Filtragem e reprocessamento da produção mundial de gás carbônico</h2>
-                                        <p>As árvores desempenham um papel-chave na redução dos níveis de poluição.
-                                            Para
-                                            entendermos melhor como isso funciona, vamos tomar como exemplo o gás
-                                            carbônico (CO2), cujas emissões provêm tanto de fontes naturais como da
-                                            atividade humana. Nos últimos 150 anos, os seres humanos têm lançado
-                                            quantidades enormes de CO2 no ar por meio da queima de combustíveis
-                                            fósseis,
-                                            carvão, petróleo e gás natural – e esta é uma das principais causas das
-                                            mudanças climáticas no planeta.</p><br>
-
-
-
-                                    </div>
-                                    <div class="QueiAm-img">
-                                        <img src="assets/img/poluiçãohumana.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="infoQueiAm">
-                                <div class="wall-QueiAm">
-                                    <div class="QueiAm-img">
-                                        <img src="assets/img/fotossintese.jpg" alt="">
-                                    </div>
-                                    <div class="QueiAm-texto">
-                                        <h1>Entra o gás carbônico, sai o oxigênio</h1>
-
-                                        <p>Em condições naturais, as plantas retiram o CO2 da atmosfera e o absorvem
-                                            para fazer a fotossíntese, um processo de produção de energia. Com a
-                                            fotossíntese, as plantas obtêm:
-
-                                            Oxigênio, que é liberado novamente no ar, e
-                                            Carbono, que é armazenado para permitir o crescimento das plantas. <br>
-                                            Assim, sem as florestas tropicais úmidas e todas as suas plantas fazendo
-                                            fotossíntese durante o todo o dia, o efeito estufa provavelmente seria
-                                            mais
-                                            pronunciado, e as mudanças climáticas podem vir a ser ainda mais graves.
-                                        </p>
-                                        <br>
-
-                                    </div>
-
-
-
-                                </div>
-                                <div class="container">
-                                    <div class="QueiAm-texto2">
-                                        <h1>Floresta Amazônica e o gás carbônico</h1>
-                                        <p>
-                                            O que as florestas retiram do ar elas podem devolver. Quando as
-                                            florestas
-                                            são queimadas, a matéria de carbono da árvore é liberada no ar, na forma
-                                            de
-                                            CO2, um gás que polui o ar e que já está presente numa quantidade
-                                            excessiva
-                                            na atmosfera. <br>
-                                            Onde antes havia floresta tropical úmida e savanas, agora surgem
-                                            pastagens
-                                            para a criação de gado. Os pastos estão cheios de gado e também de
-                                            cupins, e
-                                            as atividades metabólicas desses dois animais também liberam CO2, embora
-                                            sua
-                                            contribuição para a poluição atmosférica ainda gere muita polêmica. <br>
-                                            As culturas agrícolas que substituem as florestas absorvem apenas uma
-                                            pequena fração do CO2 consumido pela floresta tropical úmida. Então, sem
-                                            florestas, o CO2 deixa de ser transformado pela fotossíntese. Juntamente
-                                            com
-                                            a poluição industrial, o desmatamento descontrolado na América do Sul e
-                                            em
-                                            outros lugares aumentou significativamente a quantidade de CO2 na
-                                            atmosfera.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="container">
-                            <div class="infoQueimadasAmaz">
-
-                                <div class="gallery autoplay items-3">
-                                    <div id="item-1" class="control-operator"></div>
-
-                                    <div id="item-3" class="control-operator"></div>
-                                    <div id="item-4" class="control-operator"></div>
-
-                                    <figure class="item">
-                                        <h1><img src="assets/img/queimadaA4.jpg" alt=""></h1>
-                                    </figure>
-
-
-
-                                    <figure class="item">
-                                        <h1><img src="assets/img/queimadaA3.jpg" alt=""></h1>
-                                    </figure>
-
-                                    <figure class="item">
-                                        <h1><img src="assets/img/queimadaA1.jpg" alt=""></h1>
-                                    </figure>
-
-                                    <div class="controls">
-                                        <a href="#item-1" class="control-button">.</a>
-
-                                        <a href="#item-3" class="control-button">.</a>
-                                        <a href="#item-4" class="control-button">.</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="barra"></div>
-                    </div>
-
-
-
-
-                </div>
-
-
-                <div id="pant" class="item" style="display: none;">
+                <div id="amaz" class="item" style="display: none;">
 
                     <div class="container">
                         <div class="barra"></div>
                         <div class="infoBioma">
                             <div class="wall-all">
                                 <div class="Bioma-img">
-                                    <img src="assets/img/mapaPant.jpg" alt="">
+                                    <img src="assets/img/mapaAmaz.png" alt="">
                                 </div>
                                 <div class="Bioma-texto">
-                                    <h2>O Bioma Pantanal</h2>
-                                    <p>O Pantanal é um dos menores biomas existentes no Brasil. Sua localização está na
-                                        região Centro-Oeste, nos estados do Mato Grosso (no sul do estado) e do Mato
-                                        Grosso do Sul (no noroeste do estado), além de poder ser encontrado no Paraguai
-                                        e na Bolívia.</p>
-                                    <p>É um bioma extremamente rico quando o assunto é fauna brasileira, pois abriga
-                                        grande parte dos animais existentes no Brasil. Sua preservação ambiental é alta,
-                                        sendo considerado o bioma mais preservado do país de acordo com os órgãos
-                                        governamentais, como o Instituto Brasileiro de Geografia e Estatística.
+                                    <h2>O Bioma Amazônia</h2>
+                                    <p>A Amazônia é uma floresta tropical úmida que se estende pela bacia
+                                        hidrográfica do rio Amazonas, uma vasta área tropical natural, com área
+                                        de
+                                        aproximadamente 6,74 milhões km2, que se estende por oito países:
+                                        Bolívia,
+                                        Brasil, Colômbia, Equador, Guiana, Peru e Venezuela. <br>
+                                        O bioma Amazônia é quase do tamanho da bacia, com 6,7 milhões de km². A
+                                        maior parte desse bioma – 60,1% – está em território brasileiro. Para se
+                                        ter
+                                        uma ideia de sua grandiosidade, se a Amazônia fosse um país, seria o
+                                        sétimo
+                                        maior do mundo.</p><br>
+                                    <p>Amazônia abriga um número enorme de plantas e animais existentes no
+                                        planeta e
+                                        a maior parte dessas espécies sequer foi estudada pelos cientistas. <br>
+                                        Até agora, já se tem a classificação científica de pelo menos 40 mil
+                                        espécies vegetais, 427 mamíferos, 1.294 aves, 378 répteis, 427 anfíbios
+                                        e
+                                        cerca de 3 mil peixes da região. <br>
+                                        No entanto, as menores formas de vida são as que apresentam os números
+                                        mais
+                                        impressionantes: os cientistas já descreveram entre 96.660 e 128.840
+                                        espécies de invertebrados só na parte brasileira da Amazônia.
                                     </p><br>
 
 
@@ -394,16 +173,29 @@
                             <div class="wall-all">
 
                                 <div class="Indio-texto">
-                                    <h2>Povos indígenas do Pantanal</h2>
-                                    <p>Os povos indígenas do Pantanal matém em seu  modo de vida indígena muito das tradições
-                                        dos primeiros habitantes, ainda resistem na cultura dos ribeirinhos
-                                        pantaneiros, principalmente os elementos relacionados aos povos Guató. Grandes
-                                        canoeiros e pescadores, conhecidos como os argonautas do Pantanal eram exímios
-                                        caçadores de onças. O uso da “zagaia” – uma espécie de lança com a qual se
-                                        caçava onças-pintadas no passado – também é atribuído a esses povos. </p>
+                                    <h2>A riqueza cultural indígena</h2>
+                                    <p>A vida silvestre da Amazônia compartilha o espaço com cerca de 30 milhões
+                                        de
+                                        pessoas. Nessa população, incluem-se mais de 220 grupos indígenas na
+                                        Amazônia
+                                        brasileira, além de comunidades tradicionais que dependem dos recursos
+                                        naturais
+                                        para sobreviver. </p><br>
+                                    <p>
+                                        Por trás dessa incrível diversidade cultural, no entanto, descortina-se
+                                        um
+                                        cenário desolador. Apesar de habitarem uma área com uma coleção
+                                        fantástica
+                                        de
+                                        produtos e serviços naturais, muitas das populações locais continuam
+                                        vivendo
+                                        em
+                                        relativa pobreza.
+
+                                    </p>
                                 </div>
                                 <div class="Indio-img">
-                                    <img src="assets/img/indiocaçando.jpg" alt="">
+                                    <img src="assets/img/indioAmazonia.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -490,7 +282,7 @@
                         <div class="infoQueiAm">
                             <div class="wall-QueiAm">
                                 <div class="QueiAm-img">
-                                    <img src="assets/img/fotossintese.gif" alt="">
+                                    <img src="assets/img/fotossintese.jpg" alt="">
                                 </div>
                                 <div class="QueiAm-texto">
                                     <h1>Entra o gás carbônico, sai o oxigênio</h1>
@@ -548,6 +340,7 @@
 
                     <div class="container">
                         <div class="infoQueimadasAmaz">
+
                             <div class="gallery autoplay items-3">
                                 <div id="item-1" class="control-operator"></div>
 
@@ -555,17 +348,17 @@
                                 <div id="item-4" class="control-operator"></div>
 
                                 <figure class="item">
-                                    <h1><img src="assets/img/imgQP1.jpg" alt=""></h1>
+                                    <h1><img src="assets/img/queimadaA4.jpg" alt=""></h1>
                                 </figure>
 
 
 
                                 <figure class="item">
-                                    <h1><img src="assets/img/imgQP2.jpg" alt=""></h1>
+                                    <h1><img src="assets/img/queimadaA3.jpg" alt=""></h1>
                                 </figure>
 
                                 <figure class="item">
-                                    <h1><img src="assets/img/imgQP6.jpg" alt=""></h1>
+                                    <h1><img src="assets/img/queimadaA1.jpg" alt=""></h1>
                                 </figure>
 
                                 <div class="controls">
@@ -576,6 +369,16 @@
                                 </div>
 
                             </div>
+
+                            <div class="grafico">
+                                <h2>abaixo podemos ver uma grafico onde mostra o avanço das queimdas da Amazônia
+                                    ao longo dos anos:
+                                </h2>
+
+                                <div class="Chart">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="barra"></div>
@@ -585,10 +388,243 @@
 
 
             </div>
-        </div>
 
-        <div class="botaoEsc"><button style="display: none;" id="menos" onclick="esconder()">mostrar
-                menos</button></div>
+
+            <div id="pant" class="item" style="display: none;">
+
+                <div class="container">
+                    <div class="barra"></div>
+                    <div class="infoBioma">
+                        <div class="wall-all">
+                            <div class="Bioma-img">
+                                <img src="assets/img/mapaPant.jpg" alt="">
+                            </div>
+                            <div class="Bioma-texto">
+                                <h2>O Bioma Pantanal</h2>
+                                <p>O Pantanal é um dos menores biomas existentes no Brasil. Sua localização está na
+                                    região Centro-Oeste, nos estados do Mato Grosso (no sul do estado) e do Mato
+                                    Grosso do Sul (no noroeste do estado), além de poder ser encontrado no Paraguai
+                                    e na Bolívia.</p>
+                                <p>É um bioma extremamente rico quando o assunto é fauna brasileira, pois abriga
+                                    grande parte dos animais existentes no Brasil. Sua preservação ambiental é alta,
+                                    sendo considerado o bioma mais preservado do país de acordo com os órgãos
+                                    governamentais, como o Instituto Brasileiro de Geografia e Estatística.
+                                </p><br>
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="infoIndio">
+                        <div class="wall-all">
+
+                            <div class="Indio-texto">
+                                <h2>Povos indígenas do Pantanal</h2>
+                                <p>O Pantanal foi ocupado há aproximadamente 8,4 mil anos por povos indígenas que
+                                    formaram um mosaico cultural ao longo da região. Isso ocorreu antes da
+                                    colonização pelos Europeus e não é possível estabelecer nenhuma relação com as
+                                    etnias daquela época com as que conhecemos hoje em dia. </p>
+                                <p>Os povos indígenas do Pantanal matém em seu modo de vida indígena muito das
+                                    tradições
+                                    dos primeiros habitantes, ainda resistem na cultura dos ribeirinhos
+                                    pantaneiros, principalmente os elementos relacionados aos povos Guató. Grandes
+                                    canoeiros e pescadores, conhecidos como os argonautas do Pantanal eram exímios
+                                    caçadores de onças. O uso da “zagaia” – uma espécie de lança com a qual se
+                                    caçava onças-pintadas no passado – também é atribuído a esses povos. </p>
+                            </div>
+                            <div class="Indio-img">
+                                <img src="assets/img/indiocaçando.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="infoCura">
+                        <div class="wall-all">
+                            <div class="Cura-img">
+                                <img src="assets/img/medicinalplanta.jpg" alt="">
+                            </div>
+                            <div class="Cura-texto">
+                                <h2>A Floresta Amazônica pode curar você</h2>
+                                <h3>O potencial inexplorado das plantas amazônicas</h3><br>
+
+                                <p>Há uma ligação entre os remédios guardados nos armários de sua casa e a
+                                    vida
+                                    silvestre da Amazônia: plantas e animais servem como base para a
+                                    fabricação
+                                    de medicamentos.<br>
+                                    Durante milênios, os seres humanos utilizaram insetos, plantas e outros
+                                    organismos da região para várias finalidades, entre elas a agricultura,
+                                    vestimentas e, claro, a cura para doenças. <br>
+                                    Povos indígenas e outros grupos que vivem na floresta amazônica
+                                    aperfeiçoaram o uso de compostos químicos encontrados em plantas e
+                                    animais.
+                                    O conhecimento sobre o uso dessas plantas geralmente fica nas mãos de um
+                                    curandeiro, que por sua vez repassa a tradição para um aprendiz. Esse
+                                    processo se mantém ao longo de séculos e compõe uma parte integral da
+                                    identidade desses povos. <br>
+                                    No entanto, com o rápido desaparecimento das florestas úmidas tropicais,
+                                    a
+                                    continuidade desse conhecimento para o benefício das futuras gerações
+                                    encontra-se ameaçada. <br>
+                                </p><br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="Cura-texto2">
+
+                        <p>Os cientistas acreditam que menos de 0,5% das espécies da flora foram
+                            detalhadamente
+                            estudadas quanto ao seu potencial medicinal. Ao mesmo tempo em que o bioma
+                            Amazônia está
+                            encolhendo lentamente em tamanho, a riqueza da vida silvestre de suas florestas
+                            também
+                            se reduz, bem como uso potencial das plantas e animais que ainda não foram
+                            descobertos.
+                        </p>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="infoQueiAm">
+                        <div class="wall-QueiAm">
+
+                            <div class="QueiAm-texto">
+                                <h1>O que liga a floresta Amazônica, o aquecimento mundial e você?</h1>
+                                <h2>Filtragem e reprocessamento da produção mundial de gás carbônico</h2>
+                                <p>As árvores desempenham um papel-chave na redução dos níveis de poluição.
+                                    Para
+                                    entendermos melhor como isso funciona, vamos tomar como exemplo o gás
+                                    carbônico (CO2), cujas emissões provêm tanto de fontes naturais como da
+                                    atividade humana. Nos últimos 150 anos, os seres humanos têm lançado
+                                    quantidades enormes de CO2 no ar por meio da queima de combustíveis
+                                    fósseis,
+                                    carvão, petróleo e gás natural – e esta é uma das principais causas das
+                                    mudanças climáticas no planeta.</p><br>
+
+
+
+                            </div>
+                            <div class="QueiAm-img">
+                                <img src="assets/img/poluiçãohumana.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infoQueiAm">
+                        <div class="wall-QueiAm">
+                            <div class="QueiAm-img">
+                                <img src="assets/img/fotossintese.gif" alt="">
+                            </div>
+                            <div class="QueiAm-texto">
+                                <h1>Entra o gás carbônico, sai o oxigênio</h1>
+
+                                <p>Em condições naturais, as plantas retiram o CO2 da atmosfera e o absorvem
+                                    para fazer a fotossíntese, um processo de produção de energia. Com a
+                                    fotossíntese, as plantas obtêm:
+
+                                    Oxigênio, que é liberado novamente no ar, e
+                                    Carbono, que é armazenado para permitir o crescimento das plantas. <br>
+                                    Assim, sem as florestas tropicais úmidas e todas as suas plantas fazendo
+                                    fotossíntese durante o todo o dia, o efeito estufa provavelmente seria
+                                    mais
+                                    pronunciado, e as mudanças climáticas podem vir a ser ainda mais graves.
+                                </p>
+                                <br>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="container">
+                            <div class="QueiAm-texto2">
+                                <h1>Floresta Amazônica e o gás carbônico</h1>
+                                <p>
+                                    O que as florestas retiram do ar elas podem devolver. Quando as
+                                    florestas
+                                    são queimadas, a matéria de carbono da árvore é liberada no ar, na forma
+                                    de
+                                    CO2, um gás que polui o ar e que já está presente numa quantidade
+                                    excessiva
+                                    na atmosfera. <br>
+                                    Onde antes havia floresta tropical úmida e savanas, agora surgem
+                                    pastagens
+                                    para a criação de gado. Os pastos estão cheios de gado e também de
+                                    cupins, e
+                                    as atividades metabólicas desses dois animais também liberam CO2, embora
+                                    sua
+                                    contribuição para a poluição atmosférica ainda gere muita polêmica. <br>
+                                    As culturas agrícolas que substituem as florestas absorvem apenas uma
+                                    pequena fração do CO2 consumido pela floresta tropical úmida. Então, sem
+                                    florestas, o CO2 deixa de ser transformado pela fotossíntese. Juntamente
+                                    com
+                                    a poluição industrial, o desmatamento descontrolado na América do Sul e
+                                    em
+                                    outros lugares aumentou significativamente a quantidade de CO2 na
+                                    atmosfera.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="infoQueimadasAmaz">
+                        <div class="gallery autoplay items-3">
+                            <div id="item-1" class="control-operator"></div>
+
+                            <div id="item-3" class="control-operator"></div>
+                            <div id="item-4" class="control-operator"></div>
+
+                            <figure class="item">
+                                <h1><img src="assets/img/imgQP1.jpg" alt=""></h1>
+                            </figure>
+
+
+
+                            <figure class="item">
+                                <h1><img src="assets/img/imgQP2.jpg" alt=""></h1>
+                            </figure>
+
+                            <figure class="item">
+                                <h1><img src="assets/img/imgQP6.jpg" alt=""></h1>
+                            </figure>
+
+                            <div class="controls">
+                                <a href="#item-1" class="control-button">.</a>
+
+                                <a href="#item-3" class="control-button">.</a>
+                                <a href="#item-4" class="control-button">.</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="barra"></div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="botaoEsc"><button style="display: none;" id="menos" onclick="esconder()">mostrar
+            menos</button></div>
     </div>
 
 
@@ -604,7 +640,7 @@
                 <div class="item-footer">
                     <h3>Contato</h3>
                     Tel: (11)3390-9011 <br><br>
-                    atendimento@survival.com.br
+                    atendimento@survivor.com.br
                 </div>
                 <div class="item-footer">
                     <img src="assets/img/iconesOFC.png" alt="">
@@ -621,23 +657,63 @@
 
 </html>
 <script>
-    function mostrar_amaz() {
+    var ctx = document.getElementById('myChart');
 
-        amaz.style = 'display: block';
-        pant.style = 'display: none';
-        menos.style = 'display: block'
-    }
+    var meuGrafico = new Chart(ctx, {
+        type: 'bar',
 
-    function mostrar_pant() {
+        data: {
 
-        amaz.style = 'display: none';
-        pant.style = 'display: block';
-        menos.style = 'display: block'
-    }
+            labels: [00, '2015/2016', '2016/2017', '2017/2018', '2018/2019', '2019/2020'],
+            datasets: [
 
-    function esconder() {
-        amaz.style = 'display: none';
-        pant.style = 'display: none';
-        menos.style = 'display: none'
-    }
+                {
+                    // Qual o título deste dataset?
+                    label: "quantidade de km2 de mata desmatada no ano",
+                    // Dados? Lembre-se, respectivos a labels.
+                    data: [00, 5.337, 4.639, 4.571, 6.844, 9.205],
+                    // expessura da linha
+                    borderWidth: 10,
+                    // cor da linha - em rgba, a é a opacidade.
+                    // 1 = 100% // 0.5 = 50%
+                    borderColor: 'transparent',
+                    // cor de "fundo" dos dados na tela. transparent = sem cor.
+                    backgroundColor: '#BF3F3F',
+
+                },
+
+
+            ]
+        },
+
+        options: {
+
+            title: {
+                // mostrar titulo?
+                display: true,
+                // tamanho do texto
+                fontSize: 20,
+                // texto no titulo
+                text: "Desmatamento na Amazônia",
+                // onde? right? left? top?
+                position: 'top',
+            },
+            legend: {
+                // mostrar legenda?
+                display: true,
+                // ao contrario? (dataset 1 depois de 2)
+                reverse: true,
+                // onde?
+                position: 'right'
+            },
+            layout: {
+                padding: {
+                    // padding do grafico, pode add right e bottom também
+                    left: 50,
+                    top: 50
+                },
+
+            }
+        }
+    })
 </script>
