@@ -14,6 +14,7 @@ body {
     text-decoration: none;
     box-sizing: border-box;
     
+    
 }
 
 .container{
@@ -33,7 +34,7 @@ body {
     align-items: center;
     background-color: white;
     box-shadow: 0 0 30px rgba(24, 24, 26, 0.658);
-    
+    transition: .3s;
   
 }
 
@@ -41,12 +42,13 @@ body {
 .item-header img{
     height: 110px;
     border-bottom: black;
+    transition: .3s;
 }
 
 .item-header ul li{
     display: inline;
     margin-right: 25px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .item-header ul li a{
@@ -81,7 +83,7 @@ body {
 .btn-cadastro:hover{
     background: #fda623;
     border: 1px solid #fda623;
-    color: black;
+    color: white;
     transition: .3s;
 }
 
@@ -125,23 +127,35 @@ body {
     font-size: 15px;
     color: rgb(134, 132, 132);
     margin-left: 10px;
+    
 }
+
+.audio {
+    margin: 0;
+    position: initial;
+    
+}
+
+
+
 
 .wall-info{
   
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 /* background-image: url(../img/fundoBrancoFolhas.jpg);*/
     
-    
   
+}
+.info3-img {
+    margin-bottom: 100px;
 }
 
 
 
 .fundo {
     background-attachment: fixed;
-    
+    border-bottom: 0.5px solid rgb(134, 132, 132) ;
     background-image: url(../img/fundofloresta2.jpg);
     box-shadow: 0 0 40px rgba(10, 10, 10, 0.658);
     border-top: 0.5px solid rgb(134, 132, 132);
@@ -170,10 +184,11 @@ body {
     border: 2px solid black;
     border-radius: 10px;
     cursor: pointer;
+    box-shadow: 0 0 5px rgb(59, 58, 58);
 }
 
 .botaoEsc button {
-    margin-left: 650px;
+    margin-left: 630px;
     margin-top: 100px;
     background-color: black;
     color: white;
@@ -186,18 +201,19 @@ body {
     border-radius: 10px;
     cursor: pointer;
     margin-bottom: 100px;
+    box-shadow: 0 0 5px rgb(59, 58, 58);
 }
 
 .botaoEsc button:hover {
-    background: rgb(189, 116, 63);
-    border: 1px solid rgb(189, 116, 63);
+    background: #d97003;
+    border: 1px solid #d97003;
     color: white;
     transition: .3s;
 }
 
 .botao button:hover {
-    background: rgb(189, 116, 63);
-    border: 1px solid rgb(189, 116, 63);
+    background: #d97003;
+    border: 1px solid #d97003;
     color: white;
     transition: .3s;
 }
@@ -328,6 +344,26 @@ body {
     
 }
 
+.infoQueimadasAmaz h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: black;
+    letter-spacing: 1px;
+
+}
+
+.infoQueimadasAmaz p {
+    align-items: center;
+    margin-bottom: 20px;
+    color: rgb(5, 5, 5);
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: initial;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
 .infoQueimadasAmaz {
     margin-bottom: 50px;
 }
@@ -384,6 +420,8 @@ body {
     font-size: 40px;
 }
 
+
+
 .barra {
     background-color: black;
     height: 10px;
@@ -424,6 +462,12 @@ body {
     
 }
 
+
+.grafico h4 {
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
 .grafico h2 {
     margin-top: 100px;
     text-align: center;
@@ -431,4 +475,9 @@ body {
     margin-bottom: 5px;
     letter-spacing: 1px;
     font-size: 20px;
+}
+
+.Chart {
+    width: 80%;
+    margin-left: 200px;
 }
