@@ -85,6 +85,7 @@ body {
 .banner {
     align-items: center;
     height: 500px;
+   
 }
 
 
@@ -96,16 +97,16 @@ body {
 }
 
 .noticias img {
-    width: 300px;
+    width: 400px;
     height: 300px;
-    margin-left: 80px;
+    margin-left: 37px;
     border-radius: 10px;
     box-shadow: 0 0 5px rgb(59, 58, 58);
 }
 
 .noticias h2 {
     text-align: center;
-    margin: 10px 10px 10px 100px;
+    margin: 10px 10px 10px 40px;
     text-align: center;
     
 }
@@ -117,6 +118,15 @@ body {
     cursor: pointer;
     font-size: 20px;
     color: darkblue;
+}
+
+.noticias button:hover {
+    border: 1px solid transparent;
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5s;
+    color: #fda623;
 }
 
 .infosIndio button {
@@ -191,4 +201,47 @@ body {
     width: 30px;
     height: 30px;
     
+}
+
+.cabeçalho {
+    margin-top: 50px;
+}
+
+.texto-um {
+    position: relative;
+    color: rgb(250, 246, 246);
+    top: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-shadow: 0.5em 0.5em 0.5em rgb(58, 56, 56);
+    opacity: 0.85;
+    
+    
+}
+
+.info-um {
+    background-image: url(../img/fundonoticia.jpg);
+    height: 300px;
+    box-shadow: 0 0 5px rgb(59, 58, 58);
+
+    
+    
+}
+
+
+.all-infoum {
+    margin: 0;
+    padding: 0;
+}
+
+.texto-dois {
+    margin: 50px 30px 20px 30px;
+} 
+
+
+.texto-dois p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 10px 30px 5px 30px;
+    text-align: start;
 }

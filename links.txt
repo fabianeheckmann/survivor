@@ -13,3 +13,6 @@ https://pib.socioambiental.org/pt/Lista_de_organiza%C3%A7%C3%B5es_de_apoio_aos_p
 amazonia: 
 https://pib.socioambiental.org/pt/Categoria:Povos_ind%C3%ADgenas_no_Amazonas
 https://jornal.usp.br/ciencias/desmatamento-da-amazonia-dispara-de-novo-em-2020/
+
+
+noticia covid: https://covid19.socioambiental.org/

@@ -248,7 +248,7 @@ body {
     color: black;
     margin-bottom: 30px;
     letter-spacing: 1px;
-    font-size: 40px;
+    font-size: 30px;
     
     
 }
@@ -256,7 +256,7 @@ body {
 .Bioma-texto p {
     color: black;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 30px;
     
 }
@@ -278,23 +278,25 @@ body {
     color: black;
     margin-bottom: 10px;
     letter-spacing: 1px;
-    font-size: 40px;
+    font-size: 30px;
     
 }
 
 .Indio-texto p {
     color: black;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 
-.Cura-img img {
-    height: 300px;
-    border-radius: 10px;
-}
+
 
 .Cura-texto {
+    text-align: justify;
+    width: 50%;
+}
+
+.Cura-texto img {
     text-align: justify;
     width: 50%;
 }
@@ -304,7 +306,7 @@ body {
     color: black;
     margin-bottom: 10px;
     letter-spacing: 1px;
-    font-size: 40px;
+    font-size: 30px;
     
 }
 
@@ -316,7 +318,7 @@ body {
 .Cura-texto p {
     color: black;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .Cura-img img {
@@ -328,7 +330,7 @@ body {
 .Cura-texto2  {
     color: black;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 17px;
     margin-left: 35px;
     margin-right: 35px;
 }
@@ -345,7 +347,7 @@ body {
 }
 
 .infoQueimadasAmaz h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 10px;
     color: black;
     letter-spacing: 1px;
@@ -357,7 +359,7 @@ body {
     margin-bottom: 20px;
     color: rgb(5, 5, 5);
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 17px;
     text-align: initial;
     margin-left: 40px;
     margin-right: 40px;
@@ -383,7 +385,7 @@ body {
     color: black;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    font-size: 40px;
+    font-size: 30px;
     
 }
 
@@ -398,7 +400,7 @@ body {
 .QueiAm-texto p {
     color: black;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .QueiAm-texto2 {
@@ -406,7 +408,7 @@ body {
     margin-bottom: 70px;
     color: black;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 17px;
     text-align: initial;
     margin-left: 35px;
     margin-right: 35px;
@@ -423,11 +425,11 @@ body {
 
 
 .barra {
-    background-color: black;
+    background-color: rgb(179, 176, 176);
     height: 10px;
     width: 100%;
-    box-shadow: black;
-    box-shadow: 0 0 7px rgb(1, 1, 17);
+    
+    box-shadow: 0 0 7px rgb(107, 107, 109);
 }
 
 
