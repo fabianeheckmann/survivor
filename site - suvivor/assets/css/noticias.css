@@ -232,10 +232,11 @@ body {
 .all-infoum {
     margin: 0;
     padding: 0;
+    height: 300px;
 }
 
 .texto-dois {
-    margin: 50px 30px 20px 30px;
+    margin: 30px 30px 20px 30px;
 } 
 
 

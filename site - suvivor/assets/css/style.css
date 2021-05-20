@@ -426,10 +426,10 @@ body {
 
 .barra {
     background-color: rgb(179, 176, 176);
-    height: 10px;
+    height: 1px;
     width: 100%;
     
-    box-shadow: 0 0 7px rgb(107, 107, 109);
+    box-shadow: 0 0 12px rgb(107, 107, 109);
 }
 
 
