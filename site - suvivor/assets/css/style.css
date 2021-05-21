@@ -232,18 +232,18 @@ body {
     
 }
 
-.Bioma-img img{
+.first-img img{
     height: 450px;
     border-radius: 10px;
 }
 
-.Bioma-texto{
+.first-texto{
     text-align: justify;
     width: 50%;
     
 }
 
-.Bioma-texto h2{
+.first-texto h2{
     text-align: center;
     color: black;
     margin-bottom: 30px;
@@ -253,7 +253,7 @@ body {
     
 }
 
-.Bioma-texto p {
+.first-texto p {
     color: black;
     letter-spacing: 1px;
     font-size: 17px;
@@ -263,17 +263,21 @@ body {
 
 
 
-.Indio-img img{
+.second-img img{
     height: 300px;
     border-radius: 10px;
 }
 
-.Indio-texto{
+.third-imgP img {
+    border-radius: 10px;
+}
+
+.second-texto{
     text-align: justify;
     width: 50%;
 }
 
-.Indio-texto h2{
+.second-texto h2{
     text-align: center;
     color: black;
     margin-bottom: 10px;
@@ -282,7 +286,7 @@ body {
     
 }
 
-.Indio-texto p {
+.second-texto p {
     color: black;
     letter-spacing: 1px;
     font-size: 17px;
@@ -291,17 +295,17 @@ body {
 
 
 
-.Cura-texto {
+.third-texto {
     text-align: justify;
     width: 50%;
 }
 
-.Cura-texto img {
+.third-texto img {
     text-align: justify;
     width: 50%;
 }
 
-.Cura-texto h2 {
+.third-texto h2 {
     text-align: center;
     color: black;
     margin-bottom: 10px;
@@ -310,24 +314,24 @@ body {
     
 }
 
-.Cura-texto h3 {
+.third-texto h3 {
     font-size: 20px;
     text-align: center;
 }
 
-.Cura-texto p {
+.third-texto p {
     color: black;
     letter-spacing: 1px;
     font-size: 17px;
 }
 
-.Cura-img img {
+.third-img img {
     width: 400px;
     height: 600px;
     border-radius: 10px;
 }
 
-.Cura-texto2  {
+.third-texto2  {
     color: black;
     letter-spacing: 1px;
     font-size: 17px;
@@ -335,18 +339,7 @@ body {
     margin-right: 35px;
 }
 
-.wall-QueiAm {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px 0;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    
-}
-
-.infoQueimadasAmaz h2 {
+.infofourth h2 {
     font-size: 30px;
     margin-bottom: 10px;
     color: black;
@@ -354,7 +347,7 @@ body {
 
 }
 
-.infoQueimadasAmaz p {
+.infofourth p {
     align-items: center;
     margin-bottom: 20px;
     color: rgb(5, 5, 5);
@@ -366,21 +359,21 @@ body {
 
 }
 
-.infoQueimadasAmaz {
+.infofourth {
     margin-bottom: 50px;
 }
 
-.QueiAm-img img{
+.fourth-img img{
     height: 300px;
     border-radius: 10px;
 }
 
-.QueiAm-texto{
+.fourth-texto{
     text-align: justify;
     width: 50%;
 }
 
-.QueiAm-texto h1{
+.fourth-texto h1{
     text-align: center;
     color: black;
     margin-bottom: 20px;
@@ -389,7 +382,7 @@ body {
     
 }
 
-.QueiAm-texto h2 {
+.fourth-texto h2 {
     text-align: center;
     color: black;
     margin-bottom: 5px;
@@ -397,13 +390,13 @@ body {
     font-size: 20px;
 }
 
-.QueiAm-texto p {
+.fourth-texto p {
     color: black;
     letter-spacing: 1px;
     font-size: 17px;
 }
 
-.QueiAm-texto2 {
+.fourth-texto2 {
     align-items: center;
     margin-bottom: 70px;
     color: black;
@@ -414,7 +407,7 @@ body {
     margin-right: 35px;
 }
 
-.QueiAm-texto2 h1 {
+.fourth-texto2 h1 {
     text-align: center;
     color: black;
     margin-bottom: 20px;
