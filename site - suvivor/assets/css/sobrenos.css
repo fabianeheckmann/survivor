@@ -48,12 +48,12 @@ body {
 
 .item-header ul li a{
     color: black;
-    transition: .3s;
+    transition: 0.3;
 }
 
 .item-header ul li a:hover{
     color: #d97003;
-    transition: .3s;
+    
 }
 
 .item-header button{
@@ -68,7 +68,7 @@ body {
 .btn-cadastro{
     background-color: black;
     color: white;
-    transition: .3s;
+    transition: 0.3s;
     font-size: 15px;
    border: 2px solid #949d6a;
    box-shadow: 0 0 5px rgb(59, 58, 58);
@@ -79,7 +79,7 @@ body {
     background: #fda623;
     border: 1px solid #fda623;
     color: black;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .wall-all {
