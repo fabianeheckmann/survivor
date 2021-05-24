@@ -6,9 +6,9 @@ body {
 
 }
 
-.login {
-    width: 320px;
-    height: 450px;
+.cadastro {
+    width: 400px;
+    height: 600px;
     border: 2px solid #000;
     border-radius: 80px 0px 80px 0px;
     color: #fff;
@@ -25,7 +25,7 @@ body {
 .usuarioimg {
     border-radius: 50%;
     position: absolute;
-    top: -3.8%;
+    top: -2.7%;
     left: 112px;
 }
 
@@ -40,19 +40,19 @@ h1 {
     font-size: 30px;
 }
 
-.login p {
+.cadastro p {
     margin: 0;
     padding: 0;
     font-weight: bold;
     font-size: 20px;
 }
 
-.login input {
+.cadastro input {
     width: 100%;
     margin-bottom: 20px;
 }
 
-.login input[type='text'], input[type='password'] {
+.cadastro input[type='text'], input[type='password'] {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -62,7 +62,7 @@ h1 {
     font-size: 16px;
 }
 
-.login input[type='submit'] {
+.cadastro input[type='submit'] {
     border: none;
     outline: none;
     height: 35px;
@@ -73,13 +73,13 @@ h1 {
     transition: 0.5s;
 }
 
-.login input[type='submit']:hover {
+.cadastro input[type='submit']:hover {
     cursor: pointer;
     background: #d97003;
     transition: 0.5s;
 }
 
-.login a {
+.cadastro a {
     font-weight: bold;
     text-decoration: none;
     font-size: 16px;
@@ -90,7 +90,7 @@ h1 {
 
 }
 
-.login a:hover {
+.cadastro a:hover {
      transition: 0.3s;
      color: #d97003;
 }

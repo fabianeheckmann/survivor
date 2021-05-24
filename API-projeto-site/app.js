@@ -6,7 +6,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+// manter rota. alterar apenas dados do banco.
 var usuariosRouter = require('./routes/usuarios');
+// alterar rota leituras.
 var leiturasRouter = require('./routes/leituras');
 
 var app = express();
