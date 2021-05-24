@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
-var Leitura = require('../models').Leitura;
+var ong = require('../models').ong;
 var env = process.env.NODE_ENV || 'development';
 
 /* Recuperar as últimas N leituras */
@@ -18,14 +18,7 @@ router.get('/ultimas/:idcaminhao', function(req, res, next) {
 
 	if (env == 'dev') {
 		// abaixo, escreva o select de dados para o Workbench
-		instrucaoSql = `select 
-		temperatura, 
-		umidade, 
-		momento,
-		DATE_FORMAT(momento,'%H:%i:%s') as momento_grafico
-		from leitura
-		where fkcaminhao = ${idcaminhao}
-		order by id desc limit ${limite_linhas}`;
+	   instrucaoSql = `select * from ong where estado = 'são paulo'`;
 	} else if (env == 'production') {
 		// abaixo, escreva o select de dados para o SQL Server
 		instrucaoSql = `select top ${limite_linhas} 

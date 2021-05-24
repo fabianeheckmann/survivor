@@ -27,7 +27,7 @@ module.exports = {
     // altere APENAS username, password e database.
     username: 'root',
     password: 'lau39039',
-    database: 'enviaDados',
+    database: 'survivor',
     host: '127.0.0.1',
     dialect: 'mysql',
     xuse_env_variable: 'DATABASE_URL',
