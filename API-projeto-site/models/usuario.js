@@ -27,7 +27,17 @@ module.exports = (sequelize, DataTypes) => {
 			field: 'senha',
 			type: DataTypes.STRING,
 			allowNull: false
-		}
+		},
+		cidade: {
+			field: 'cidade',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		estado: {
+			field: 'estado',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
 	}, 
 	{
 		tableName: 'usuario', 

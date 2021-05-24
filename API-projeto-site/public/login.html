@@ -1,74 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto IoT - Sobre</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contato-e-login.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="shortcut icon" href="assets/img/cocarpng.png">
+    <title>login</title>
 </head>
-
 <body>
-    <!--header inicio-->
-    <div class="header">
-        <div class="container">
-            <h1 class="titulo"><span class="highlight">Projeto</span> IoT Revolucionário</h1>
-            <div class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="" class="current">Login</a></li>
-                </ul>
-            </div>
-        </div>
+    <div class="login">
+       <a href="index.html"><img src="assets/img/usuario.png" class="usuarioimg" width="100px" height="100px" alt=""></a>
+        <h1>Login</h1>
+        <form id="form_login" method="post" onsubmit="return entrar()">
+
+            <p>Email</p>
+            <input type="text" name="login" id="" placeholder="insira seu nome de usuário">
+            <p>Senha</p>
+            <input type="password" name="senha" id="" placeholder="insira sua senha">
+            <input type="submit" value="login">
+            <a href="a">esqueci a senha</a> <br>
+            <a href="a">Cadastre-se</a>
+            
+
+        </form>
     </div>
-    <!--header fim-->
-
-    <div class="pag-login">
-        <div class="container">
-            <div class="box-login">
-                <h1>Login</h1>
-
-
-
-                <form id="form_login" method="post" onsubmit="return entrar()">
-                    Usuário:
-                    <input type="text" class="input-padrao" name="login">
-                    <br>
-                    Senha:
-                    <input type="password" class="input-padrao" name="senha">
-                    <br>
-                    <button id="btn_entrar" class="btn-green">Entrar</button>
-                </form>
-
-                <div class="extra">
-                    <div id="div_erro" class="msg_erro">
-                    </div>
-
-                    <img src="aguarde-orange.gif" id="img_aguarde"  > <!--style="display: none;"-->
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com carinho por um aluno BandTec. Copyright © 2021</h4>
-        </div>
-    </div>
-    <!--footer fim-->
-
 </body>
-
 </html>
 <script>
-
-    function entrar() {
-        aguardar();
+      function entrar() {
+        
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -81,6 +42,7 @@
 
                     sessionStorage.login_usuario_meuapp = json.login;
                     sessionStorage.nome_usuario_meuapp = json.nome;
+                    sessionStorage.estado_usuario_meuapp = json.estado;
 
                     window.location.href = 'tempo-real.html';
                 });
@@ -91,25 +53,11 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    finalizar_aguardar(texto);
+                    
                 });
             }
         });
 
         return false;
     }
-
-    function aguardar() {
-        btn_entrar.disabled = true;
-        img_aguarde.style.visibility = 'visible';
-        div_erro.style.visibility = 'hidden';
-    }
-
-    function finalizar_aguardar(resposta) {
-        btn_entrar.disabled = false;
-        img_aguarde.style.visibility = 'hidden';
-        div_erro.style.visibility = 'visible';
-        div_erro.innerHTML = resposta;
-    }
-
 </script>

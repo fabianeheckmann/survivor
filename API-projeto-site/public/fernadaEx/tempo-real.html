@@ -135,10 +135,11 @@
     }
 
     
-
+     var estado;
     function obterdadosporcaminhao(idcaminhao) {
         //aguardar();
-        fetch(`/leituras/tempo-real/${idcaminhao}`)
+         estado = sessionStorage.estado_usuario_meuapp;
+        fetch(`/leituras/ultimas/${estado}`)
         .then(resposta => {
 
             if (resposta.ok) {

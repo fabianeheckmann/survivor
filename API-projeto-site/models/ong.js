@@ -6,7 +6,7 @@ https://codewithhugo.com/sequelize-data-types-a-practical-guide/
 */
 
 module.exports = (sequelize, DataTypes) => {
-    let Leitura = sequelize.define('ong',{	
+    let ong = sequelize.define('ong',{	
 		id: {
 			field: 'id',
 			type: DataTypes.INTEGER,
@@ -31,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
 		estado: {
 			field: 'estado',
 			type: DataTypes.REAL, // campo 'falso' (não existe na tabela). Deverá ser preenchido 'manualmente' no select
-			allowNull: true
+			allowNull: false
 		}
 	}, 
 	{
@@ -41,5 +41,5 @@ module.exports = (sequelize, DataTypes) => {
 		timestamps: false,
 	});
 
-    return Leitura;
+    return ong;
 };

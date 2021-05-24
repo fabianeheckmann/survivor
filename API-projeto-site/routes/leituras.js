@@ -5,20 +5,20 @@ var ong = require('../models').ong;
 var env = process.env.NODE_ENV || 'development';
 
 /* Recuperar as últimas N leituras */
-router.get('/ultimas/:idcaminhao', function(req, res, next) {
+router.get('/ultimas/:estado', function(req, res, next) {
 	
 	// quantas são as últimas leituras que quer? 7 está bom?
 	const limite_linhas = 7;
 
-	var idcaminhao = req.params.idcaminhao;
+	var estado = req.params.estado;
 
 	console.log(`Recuperando as ultimas ${limite_linhas} leituras`);
 	
 	let instrucaoSql = "";
-
+// 
 	if (env == 'dev') {
 		// abaixo, escreva o select de dados para o Workbench
-	   instrucaoSql = `select * from ong where estado = 'são paulo'`;
+	   instrucaoSql = `select * from ong where estado = '${estado}'`;
 	} else if (env == 'production') {
 		// abaixo, escreva o select de dados para o SQL Server
 		instrucaoSql = `select top ${limite_linhas} 
