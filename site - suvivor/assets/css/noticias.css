@@ -233,12 +233,12 @@ body {
 
 .texto-um {
     position: relative;
-    color: rgb(250, 246, 246);
+    color: rgb(8, 8, 8);
     top: 200px;
     margin-left: 20px;
     margin-right: 20px;
-    text-shadow: 0.5em 0.5em 0.5em rgb(58, 56, 56);
-    opacity: 0.85;
+    text-shadow: 0.5em 0.5em 0.5em rgb(44, 42, 42);
+    
     
     
     
@@ -249,6 +249,7 @@ body {
     background-image: url(../img/fundonoticia.jpg);
     height: 300px;
     box-shadow: 0 0 5px rgb(59, 58, 58);
+    
 
     
     
@@ -300,4 +301,10 @@ body {
     letter-spacing: 1px;
     margin: 250px 30px 5px 30px;
     text-align: start;
+}
+
+.Chart {
+    margin: 0;
+    
+    width: 180vh;
 }

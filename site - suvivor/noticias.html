@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/noticias.css">
     <link rel="shortcut icon" href="assets/img/cocarpng.png" type="image/x-icon">
     <script src="assets/script/noticias.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <title>Notícias</title>
 </head>
 
@@ -73,7 +74,7 @@
                     <h1>ultimas Notícias</h1>
                     <div class="all-infoum">
 
-                        <div class="texto-um">
+                        <!-- <div class="texto-um">
                             <h1>COVID-19 e os Povos Indígenas</h1>
                             <h2>
                                 "Toda essa destruição não é nossa marca, é a pegada dos brancos, o rastro de vocês na
@@ -83,7 +84,7 @@
 
 
                                 Davi Kopenawa Yanomami</h4>
-                        </div>
+                        </div> -->
 
                         <div class="info-um">
 
@@ -151,17 +152,31 @@
                                         <p>163</p>
                                     </div>
 
+
                                 </div>
+                                
 
 
                             </div>
-                           <div class="texto-tres">
+                            <div class="texto-tres">
+
+                                <p>O gráfico abaixo apresenta os números de mortos contabilizados pela Sesai e as
+                                    subnotificações computadas pelo Comitê Nacional de Vida e Memória Indígena. Os dados
+                                    finais do Comitê são a soma os dois números, como no placar acima.</p><br><br>
+                            </div>
+                            <div class="texto-quatro">
                                 
-                            <p>O gráfico abaixo apresenta os números de mortos contabilizados pela Sesai e as
-                                subnotificações computadas pelo Comitê Nacional de Vida e Memória Indígena. Os dados
-                                finais do Comitê são a soma os dois números, como no placar acima.</p><br><br>
-                                <center>Indígenas mortos pela Covid-19</center>
-                           </div>
+
+                                <br><br>
+                                <div class="Chart">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+
+                                <p>Fonte: Comitê Nacional de Vida e Memória Indígena
+                                    Organizações indígenas de base da APIB, frentes de enfrentamento à COVID-19, SESAI,
+                                    Secretarias Municipais e Estaduais de Saúde e Ministério Público Federal.</p>
+                            </div>
+
                         </div>
                     </div>
                     <div style="display: none;" id="infAm" class="infosAm">
@@ -177,6 +192,94 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 </body>
 
 </html>
+
+<script>
+    var ctx = document.getElementById('myChart');
+
+    var meuGrafico = new Chart(ctx, {
+
+        type: 'line',
+
+
+        data: {
+
+            labels: [00, "abr 20", "mai 20", "jun 20", "jul 20", "ago 20", "set 20", "out 20", "nov 20", "dez 20", "jan 21", "fev 21", "mar 21", "abr 21", "mai 21"],
+
+            datasets: [
+
+                //primeiro dataset
+
+                {
+
+                    label: "indígenas mortos por COVID-19 (comitê)",
+
+                    data: [00, 3, 39, 138, 227, 315, 364, 385, 389, 392, 394, 395, 396, 397],
+
+                    borderWidth: 5,
+
+                    borderColor: 'black',
+
+                    backgroundColor: 'transparent',
+                },
+
+                //segundo dataset
+                {
+
+                    type: 'line',
+                    label: "indígenas mortos por COVID-19 (sensai)",
+                    data: [0, 0, 51, 137, 285, 362, 434, 474, 492, 507, 544, 579, 631, 661],
+                    borderWidth: 5,
+                    borderColor: 'rgba(50, 185, 205, .5)',
+                    backgroundColor: 'transparent'
+                }
+            ]
+        },
+
+
+        options: {
+
+            title: {
+                color: '#ffff00',
+
+                display: true,
+
+                fontSize: 20,
+
+                text: "Indígenas mortos pela Covid-19",
+
+                position: 'top',
+            },
+            legend: {
+
+                display: true,
+
+                reverse: true,
+                fontSize: 60,
+                color: 'rgb(255,0,0)',
+                position: 'right',
+                labels: {
+                    font: {
+                        size: 30
+                    }
+                }
+
+
+            },
+            layout: {
+                padding: {
+
+                    left: 50,
+                    top: 50
+                },
+
+            }
+        }
+    })
+
+
+</script>
