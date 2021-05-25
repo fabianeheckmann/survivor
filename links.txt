@@ -14,5 +14,6 @@ amazonia:
 https://pib.socioambiental.org/pt/Categoria:Povos_ind%C3%ADgenas_no_Amazonas
 https://jornal.usp.br/ciencias/desmatamento-da-amazonia-dispara-de-novo-em-2020/
 
-
 noticia covid: https://covid19.socioambiental.org/
+
+video musica indigena: https://www.youtube.com/watch?v=vIwP2TsKee4

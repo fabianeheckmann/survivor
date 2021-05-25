@@ -12,7 +12,7 @@ function voltar2() {
     notIn.style = 'display: block';
     notAm.style = 'display: block';
     notPt.style = 'display: block';
-    infAm.style = 'display: none';
+    infAm.style = 'display: block';
     titulo.style = 'display: block';
 }
 

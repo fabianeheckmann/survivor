@@ -1,8 +1,9 @@
 body {
     background-color: white;
+    background-attachment: fixed;
     
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   
+    font-size: xx-large;
 }
 
 *{
@@ -47,8 +48,7 @@ body {
 
 .item-header ul li a{
     color: black;
-    transition: 0.3s;
-   
+    transition: 0.3;
 }
 
 .item-header ul li a:hover{
@@ -59,7 +59,7 @@ body {
 .item-header button{
     border-radius: 25px;
     padding: 10px 30px;
-    
+    transition: 0.5s;
     cursor: pointer;
     height: 50px;
 
@@ -75,11 +75,13 @@ body {
 
 }
 
+
+
 .btn-cadastro:hover{
     background: #fda623;
     border: 1px solid #fda623;
-    color: white;
-    transition: .3s;
+    color: black;
+    transition: 0.3s;
 }
 
 .btn-login {
@@ -301,6 +303,36 @@ body {
     letter-spacing: 1px;
     margin: 250px 30px 5px 30px;
     text-align: start;
+}
+
+.texto-quatro h4 {
+    font-size: 15px;
+    font-weight: 200px;
+    margin-bottom: 30px;
+    
+}
+
+.texto-quatro p {
+    ont-size: 15px;
+   
+    margin-bottom: 100px;
+}
+
+.texto-cinco h1 {
+    margin-bottom: 20px;
+}
+
+.texto-cinco img {
+    height: 350px;
+    width: 500px;
+}
+
+.texto-cinco  {
+    margin-bottom: 70px;
+}
+
+.fontes {
+    color: lightslategray;
 }
 
 .Chart {

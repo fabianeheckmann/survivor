@@ -1,0 +1,104 @@
+body {
+    background-color: white;
+    background-attachment: fixed;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    max-width: 1350px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(24, 24, 26, 0.658);
+    
+  
+}
+
+
+.item-header img{
+    height: 110px;
+    border-bottom: black;
+}
+
+.item-header ul li{
+    display: inline;
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+.item-header ul li a{
+    color: black;
+    transition: 0.3;
+}
+
+.item-header ul li a:hover{
+    color: #d97003;
+    
+}
+
+.item-header button{
+    border-radius: 25px;
+    padding: 10px 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    height: 50px;
+
+}
+
+.btn-cadastro{
+    background-color: rgb(253, 251, 251);
+    color: rgb(3, 3, 3);
+    transition: .3s;
+    font-size: 15px;
+   border: 2px solid white;
+   box-shadow: 0 0 5px rgb(85, 84, 84);
+
+}
+
+
+
+.btn-cadastro:hover{
+    background: #fda623;
+    border: 1px solid #fda623;
+    color: black;
+    transition: 0.3s;
+}
+
+.btn-login {
+    background-color: black;
+    color: white;
+    transition: .3s;
+    font-size: 15px;
+   border: 2px solid #949d6a;
+   box-shadow: 0 0 5px rgb(59, 58, 58);
+
+}
+
+
+
+.btn-login:hover {
+    background: #fda623;
+    border: 1px solid #fda623;
+    color: white;
+    transition: .3s;
+}
