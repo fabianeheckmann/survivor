@@ -23,11 +23,7 @@ module.exports = (sequelize, DataTypes) => {
 			type: DataTypes.REAL,
 			allowNull: false
 		},
-		cep: {
-			field: 'cep',
-			type: DataTypes.REAL, // NÃO existe DATETIME. O tipo DATE aqui já tem data e hora
-			allowNull: false
-		},
+		
 		estado: {
 			field: 'estado',
 			type: DataTypes.REAL, // campo 'falso' (não existe na tabela). Deverá ser preenchido 'manualmente' no select
