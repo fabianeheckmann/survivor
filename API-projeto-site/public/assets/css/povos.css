@@ -101,4 +101,39 @@ body {
     border: 1px solid #fda623;
     color: white;
     transition: .3s;
+    
+}
+
+.nomes {
+    display: flex;
+    padding: 100px 50px 50px 200px;
+}
+
+.div-esquerda {
+   float: left;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.div-meio {
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.div-direita {
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nomes button {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.pataxo p {
+    font-size: 15px;
 }
