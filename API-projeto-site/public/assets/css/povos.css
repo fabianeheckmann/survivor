@@ -104,15 +104,27 @@ body {
     
 }
 
+.titulo {
+    margin-left: 40px;
+    margin-top: 40px;
+    display: flex;
+    float: left;
+}
+
 .nomes {
     display: flex;
-    padding: 100px 50px 50px 200px;
+    padding: 80px 50px 50px 250px;
 }
 
 .div-esquerda {
    float: left;
    margin-left: 50px;
    margin-right: 50px;
+}
+
+.div-esquerda p {
+    display: flex;
+    justify-content: right;
 }
 
 .div-meio {
@@ -132,8 +144,25 @@ body {
     color: black;
     border: 2px solid white;
     cursor: pointer;
+    font-size: 30px;
+    
+    
 }
 
-.pataxo p {
+.nomes button:hover {
+    color: #fda623;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.nomes p {
     font-size: 15px;
+    text-align: initial;
+    margin: 0;
+    
+}
+
+.fechar button {
+    color: red;
+    font-size: large;
 }
