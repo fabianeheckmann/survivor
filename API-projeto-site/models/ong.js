@@ -18,6 +18,18 @@ module.exports = (sequelize, DataTypes) => {
 			type: DataTypes.REAL,
 			allowNull: false
 		},
+		texto: {
+			field: 'texto',
+			type: DataTypes.STRING,
+			allowNull: false
+
+		},
+		link: {
+			field: 'link',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		
 		cidade: {
 			field: 'cidade',
 			type: DataTypes.REAL,

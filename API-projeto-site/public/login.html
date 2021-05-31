@@ -40,6 +40,8 @@
 
                 resposta.json().then(json => {
 
+                    console.log('estado', json)
+
                     sessionStorage.login_usuario_meuapp = json.login;
                     sessionStorage.nome_usuario_meuapp = json.nome;
                     sessionStorage.estado_usuario_meuapp = json.estado;

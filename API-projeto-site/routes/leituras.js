@@ -34,7 +34,7 @@ router.get('/ultimas/:estado', function(req, res, next) {
 	}
 	
 	sequelize.query(instrucaoSql, {
-		model: Leitura,
+		model: ong,
 		mapToModel: true 
 	})
 	.then(resultado => {
