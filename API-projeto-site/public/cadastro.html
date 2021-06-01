@@ -17,9 +17,9 @@
             <p>Nome de usuário:</p>
             <input type="text" name="nome" id="" placeholder="insira seu nome de usuário">
             <p>cidade:</p>
-            <input type="text" name="cidade" id="" placeholder="insira seu email">
+            <input type="text" name="cidade" id="" placeholder="insira sua cidade">
             <p>estado:</p>
-            <input type="text" name="estado" id="" placeholder="insira seu email">
+            <input type="text" name="estado" id="" placeholder="insira a sigla do seu estado">
             <p>Email:</p>
             <input type="text" name="login" id="" placeholder="insira seu email">
             <p>Senha:</p>
@@ -29,6 +29,11 @@
             
 
         </form>
+    </div>
+
+    
+    <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
+        Erro no cadastro
     </div>
 </body>
 </html>
@@ -56,5 +61,43 @@
         });
 
         return false;
+    }
+
+
+    // function cadastrar() {
+    //     aguardar();
+    //     var formulario = new URLSearchParams(new FormData(form_cadastro));
+    //     fetch("/usuarios/cadastrar", {
+    //         method: "POST",
+    //         body: formulario
+    //     }).then(function (response) {
+            
+    //         if (response.ok) {
+
+    //             window.location.href='login.html';
+
+    //         } else {
+
+    //             console.log('Erro de cadastro!');
+    //             response.text().then(function (resposta) {
+    //                 div_erro.innerHTML = resposta;
+    //             });
+    //             finalizar_aguardar();
+    //         }
+    //     });
+
+    //     return false;
+    // }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display='block';
+        div_erro.style.display='none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display='none';
+        div_erro.style.display='block';
     }
 </script>

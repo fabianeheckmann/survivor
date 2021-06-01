@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/paginaFinal.css">
     <link rel="shortcut icon" href="assets/img/cocarpng.png">
     <script src="assets/script/funcoes.js"></script>
+    <script src="assets/script/paginaFinal.js"></script>
+    <script src="assets/script/funcoes.js"></script>
 
 </head>
 
@@ -43,73 +45,148 @@
     <div class="resultados" style="display: block;">
         <div class="container">
             <div class="info">
-                <h1>Lista de projetos que atuam em prol da população indígena</h1>
-                <h2>Escolha o projeto que mais lhe interessar :)</h2>
+                <h1>Projetos que atuam em prol da população indígena</h1>
+                <h2>Aqui aparece os projetos mais próximos a você. Clique em "ver mais" para ver outros
+                    projetos</h2>
 
+                <div id="textos"></div>
 
-              
-
+                <!-- 
                 <h4 id="nomeOng"></h4>
                 <p id="textoOng"> <br> </p>
-                    <a id="linkOng"></a>
-
-                <h4>CIMI – Conselho Indigenista Missionário</h4>
-                <p>O Cimi é um organismo vinculado à CNBB (Conferência Nacional dos Bispos do Brasil) que, em sua
-                    atuação
-                    missionária, conferiu um novo sentido ao trabalho da igreja católica junto aos povos indígenas.
-                    Impulsionados(as) por nossa fé no Evangelho da vida, justiça e solidariedade e frente às agressões
-                    do
-                    modelo neoliberal, decidimos intensificar a presença e apoio junto às comunidades, povos e
-                    organizações
-                    indígenas e intervir na sociedade brasileira como aliados (as) dos povos indígenas, fortalecendo o
-                    processo de autonomia desses povos na construção de um projeto alternativos, pluriétnico, popular e
-                    democrático.” <br>
-                    Mais informações: <a href="http://www.cimi.org.br">http://www.cimi.org.br</a></p>
+                <a id="linkOng"></a>
 
 
-                <h4>COMIN – Conselho de Missão entre Povos Indígenas</h4>
-                <p>O Conselho de Missão entre Povos Indígenas (COMIN) é um órgão que assessora e coordena trabalhos
-                    junto
-                    aos povos indígenas. Criado em 1982, tem como compromisso apoiar as prioridades colocadas pelos
-                    povos e
-                    comunidades indígenas, respeitando seu jeito de ser e sua cultura, trabalhando com eles e não por
-                    eles.
-                    Para isso, atua criando parcerias e dando apoio nas áreas de educação, saúde, terra, organização,
-                    sustentabilidade e defesa de direitos. O COMIN é vinculado à Igreja Evangélica de Confissão Luterana
-                    no
-                    Brasil (IECLB) e, atualmente, é um dos programas da Fundação Luterana de Diaconia (FLD), a partir da
-                    sua
-                    incorporação, em 2018. Os trabalhos do COMIN são realizados por uma equipe interdisciplinar dividida
-                    em
-                    quatro campos de trabalho: Acre e sul do Amazonas, Rondônia, leste e norte de Santa Catarina e Rio
-                    Grande do Sul. O órgão atua também através do PROFORDI, o Programa de Formação e Diálogo
-                    Intercultural e
-                    Inter-religioso, que tem o objetivo de mostrar a realidade dos povos indígenas aos não indígenas
-                    para
-                    que possam respeitá-la e valorizá-la.
-                    Mais informações: <a href="http://www.comin.org.br">http://www.comin.org.br</a></p>
+                <h4 id="nomeOng2"></h4>
+                <p id="textoOng2"> <br> </p>
+                <a id="linkOng2"></a>
 
 
-                <h4>ANAI – Associação Nacional de Ação Indigenista</h4>
-
-                <p>A ANAI faz indigenismo aplicado na região Nordeste-Leste, a mesma área compreendida pelos estados
-                    "representados" pela organização indígena Apoinme – Articulação dos Povos Indígenas no Nordeste,
-                    Minas
-                    Gerais e Espírito Santo. Seus ativistas intervêm em políticas públicas direcionadas para os povos
-                    indígenas da região nas áreas fundiária, de educação, saúde, sustentabilidade etc. Assessoram a
-                    Apoinme
-                    e organizações indígenas de caráter local na região, em especial na Bahia, em ações de formação
-                    política, de direitos indígenas e outros temas. Possui uma rede de disseminação de notícias sobre
-                    povos
-                    indígenas denominada ANAIND. <br>
-                    Mais informações: <a href="http://www.anai.org.br"> www.anai.org.br</a></p>
+                <h4 id="nomeOng3"></h4>
+                <p id="textoOng3"> <br> </p>
+                <a id="linkOng3"></a>
 
 
+                <h4 id="nomeOng4"></h4>
+                <p id="textoOng4"> <br> </p>
+                <a id="linkOng4"></a> -->
 
+                <div class="container">
+                    <div class="btn">
+                        <button onclick="vermais()">ver mais</button>
+                    </div>
+                    <div id="tudo" style="display: none;" class="tudo">
+                        <h4>CEstA - Centro de Estudos Ameríndios</h4>
+                        <p>O Centro de Estudos Ameríndios (CEstA) é um Núcleo de Apoio à Pesquisa (NAP), vinculado à
+                            Pró-Reitoria de Pesquisa da Universidade de São Paulo. Tem como objetivo produzir,
+                            aprofundar, sistematizar e divulgar conhecimentos sobre os povos indígenas das Américas. Sua
+                            equipe é composta por pesquisadores de diferentes áreas, contando com especialistas
+                            reconhecidos no Brasil e no exterior, vinculados à Faculdade de Filosofia, Letras e Ciências
+                            Humanas (Departamentos de Antropologia e História), Museu de Arqueologia e Etnologia,
+                            Instituto de Estudos Brasileiros e Instituto de Matemática e Estatística (Departamento de
+                            Ciência da Computação).
+                            Mais informações:</p>
+                        <a href="http://www.usp.br/cesta/">http://www.usp.br/cesta/</a>
 
+                        <h4>CIMI – Conselho Indigenista Missionário</h4>
+                        <p>O Cimi é um organismo vinculado à CNBB (Conferência Nacional dos Bispos do Brasil) que, em
+                            sua atuação missionária, conferiu um novo sentido ao trabalho da igreja católica junto aos
+                            povos indígenas. Impulsionados(as) por nossa fé no Evangelho da vida, justiça e
+                            solidariedade e frente às agressões do modelo neoliberal, decidimos intensificar a presença
+                            e apoio junto às comunidades, povos e organizações indígenas e intervir na sociedade
+                            brasileira como aliados (as) dos povos indígenas, fortalecendo o processo de autonomia
+                            desses povos na construção de um projeto alternativos, pluriétnico, popular e democrático.”
+                            Mais informações: </p>
+                        <a href="http://www.cimi.org.br">www.cimi.org.br</a>
 
+                        <h4>COMIN – Conselho de Missão entre Povos Indígenas</h4>
+                        <p>O Conselho de Missão entre Povos Indígenas (COMIN) é um órgão que assessora e coordena
+                            trabalhos junto aos povos indígenas. Criado em 1982, tem como compromisso apoiar as
+                            prioridades colocadas pelos povos e comunidades indígenas, respeitando seu jeito de ser e
+                            sua cultura, trabalhando com eles e não por eles. Para isso, atua criando parcerias e dando
+                            apoio nas áreas de educação, saúde, terra, organização, sustentabilidade e defesa de
+                            direitos. O COMIN é vinculado à Igreja Evangélica de Confissão Luterana no Brasil (IECLB) e,
+                            atualmente, é um dos programas da Fundação Luterana de Diaconia (FLD), a partir da sua
+                            incorporação, em 2018. Os trabalhos do COMIN são realizados por uma equipe interdisciplinar
+                            dividida em quatro campos de trabalho: Acre e sul do Amazonas, Rondônia, leste e norte de
+                            Santa Catarina e Rio Grande do Sul. O órgão atua também através do PROFORDI, o Programa de
+                            Formação e Diálogo Intercultural e Inter-religioso, que tem o objetivo de mostrar a
+                            realidade dos povos indígenas aos não indígenas para que possam respeitá-la e valorizá-la.
+                            Mais informações:</p>
+                        <a href="http://www.comin.org.br">http://www.comin.org.br</a>
+
+                        <h4>CPI-AC (Comissão Pró-Índio do Acre)</h4>
+                        <p>A Comissão Pró-Índio do Acre (CPI – AC) é uma organização não-governamental, indigenista,
+                            criada em 19 de fevereiro de 1979. Presente em 11 municípios, conta com três coordenações:
+                            educação, saúde, meio ambiente/agricultura. Desenvolve cursos de formação, assessora as
+                            aldeias, providencia documentação e publicação didática para 9 etnias, em 20 terras
+                            indígenas (Ashaninka, Kaxinawá, Arara, Manchineri, Apurinã, Jaminawa, Yawanawá, Kulina e
+                            Katukina). Além dessas atividades, realizadas no Acre, a CPI assessora programas voltados
+                            para as populações indígenas de outros estados.</p>
+                        <a href="http://www.cpiacre.org.br">http://www.cpiacre.org.br</a>
+
+                        <h4>CPI-SP (Comissão Pró-Índio de São Paulo)</h4>
+                        <p>A organização não-governamental Comissão Pró-Índio de São Paulo foi fundada em 1978 por um
+                            grupo de antropólogos, advogados, médicos, jornalistas e estudantes para defender os
+                            direitos dos povos indígenas frente às crescentes ameaças do regime ditatorial vigente
+                            naquela época. Nos seus 30 anos de existência, Comissão Pró-Índio de São Paulo tem atuado
+                            junto com índios e quilombolas para garantir seus direitos territoriais, culturais e
+                            políticos, procurando contribuir com o fortalecimento da democracia e o reconhecimento dos
+                            direitos das minorias étnicas.
+                            Mais informações:</p>
+                        <a href="http://www.cpisp.org.br">http://www.cpisp.org.br</a>
+
+                        <h4>Greenpeace</h4>
+                        <p>O Greenpeace é "uma organização global cuja missão é proteger o meio ambiente, promover a paz
+                            e inspirar mudanças de atitudes que garantam um futuro mais verde e limpo para esta e para
+                            as futuras gerações."
+                            Mais informações:</p>
+                        <a href="http://www.greenpeace.org/brasil/pt/">http://www.greenpeace.org/brasil/pt/</a>
+
+                        <h4>IEB - Instituto Internacional de Educação do Brasil</h4>
+                        <p>O Instituto Internacional de Educação do Brasil (IEB) é uma instituição brasileira do
+                            terceiro setor dedicada a formar e capacitar pessoas, bem como fortalecer organizações nas
+                            áreas de manejo dos recursos naturais, gestão ambiental e territorial e outros temas
+                            relacionados à sustentabilidade. O IEB atua em rede, busca parcerias e promove situações de
+                            interação e intercâmbio entre organizações da sociedade civil, associações comunitárias,
+                            instâncias de governo e do setor privado. Como uma organização de ações educativas,
+                            incorpora os saberes de parceiros, as diferentes culturas e as técnicas populares.
+                            Mais informações:</p>
+                        <a href=" http://www.iieb.org.br"> http://www.iieb.org.br</a>
+
+                        <h4>Iepé (Instituto de Formação e Pesquisa em Educação Indígena)</h4>
+                        <p>O objetivo central do Iepé é contribuir para o fortalecimento cultural e político e para o
+                            desenvolvimento sustentável das comunidades indígenas que vivem no Amapá e norte do Pará,
+                            proporcionando-lhes assessoria especializada e capacitação técnica diversificada para que se
+                            organizem e possam enfrentar de forma articulada os desafios crescentes que se colocam hoje
+                            às suas comunidades e organizações, para a defesa de seus interesses. Partimos do
+                            pressuposto de que a consolidação de um movimento de articulação entre os grupos indígenas
+                            da região, em torno de questões de interesse coletivo, é também a melhor maneira de
+                            fortalecer suas organizações representativas frente aos seus interlocutores externos.
+                            Mais informações:</p>
+                        <a
+                            href="http://www.institutoiepe.org.br/iepe.html">http://www.institutoiepe.org.br/iepe.html</a>
+
+                        <h4>INESC - O Instituto de Estudos Socioeconômicos</h4>
+                        <p>É uma organização não governamental, sem fins lucrativos, não partidária e com finalidade
+                            pública. Tem por missão: "Contribuir para o aprimoramento da democracia representativa e
+                            participativa visando à garantia dos direitos humanos, mediante a articulação e o
+                            fortalecimento da sociedade civil para influenciar os espaços de governança nacional e
+                            internacional". Criado em 1979, o Inesc atua, em todos os seus projetos, com duas principais
+                            linhas de ação: o fortalecimento da sociedade civil e a ampliação da participação social em
+                            espaços de deliberação de políticas públicas. Um de seus públicos-alvo são as populações
+                            indígenas situadas no Brasil.
+                            Mais informações:</p>
+                        <a href=" http://www.inesc.org.br/"> http://www.inesc.org.br/</a>
+
+                        <h4></h4>
+                        <p></p>
+                        <a href=""></a>
+                    </div>
+                </div>
 
             </div>
+
         </div>
     </div>
     <!--header fim-->
@@ -132,6 +209,7 @@
 
 
 
+    //função criada para pegar a variável estado
 
     function select() {
         var estado = sessionStorage.estado_usuario_meuapp;
@@ -145,10 +223,43 @@
 
                 console.log('estado', json)
 
-                nomeOng.innerHTML = json[0].nome
-                textoOng.innerHTML = json[0].texto
-                linkOng.innerHTML = json[0].link
-                linkOng.href = json[0].link
+
+                for (var a = 0; a < json.length; a++) {
+
+                textos.innerHTML += `
+                <h4 id="nomeOng">${json[a].nome}</h4>
+                <p id="textoOng">${json[a].texto} </p>
+                <a href="${json[a].link}" id="linkOng">${json[a].link}</a>
+                    `
+                    // nomeOng.innerHTML = json[a].nome
+                    // textoOng.innerHTML = json[a].texto
+                    // linkOng.innerHTML = json[a].link
+                    // linkOng.href = json[a].link
+
+
+                    //     for (var a = 0; a < json.length; a++) {
+
+                    //         nomeOng2.innerHTML = json[a].nome
+                    //         textoOng2.innerHTML = json[a].texto
+                    //         linkOng2.innerHTML = json[a].link
+                    //         linkOng2.href = json[a].link
+
+
+                    //     for (var a = 0; a < json.length; a++) {
+
+                    //         nomeOng3.innerHTML = json[a].nome
+                    //         textoOng3.innerHTML = json[a].texto
+                    //         linkOng3.innerHTML = json[a].link
+                    //         linkOng3.href = json[a].link
+                    //     }
+                    // }
+                }
+
+
+                // nomeOng4.innerHTML = json[i].nome
+                // textoOng4.innerHTML = json[i].texto
+                // linkOng4.innerHTML = json[i].link
+                // linkOng4.href = json[i].link
 
 
 

@@ -38,7 +38,7 @@ module.exports = (sequelize, DataTypes) => {
 		
 		estado: {
 			field: 'estado',
-			type: DataTypes.REAL, // campo 'falso' (não existe na tabela). Deverá ser preenchido 'manualmente' no select
+			type: DataTypes.REAL, 
 			allowNull: false
 		}
 	}, 

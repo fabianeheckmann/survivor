@@ -17,7 +17,7 @@ router.get('/ultimas/:estado', function(req, res, next) {
 	let instrucaoSql = "";
 // 
 	if (env == 'dev') {
-		// abaixo, escreva o select de dados para o Workbench
+		//selec criado para pegar todas as ongs de acordo com o estado informado pelo usuário usuário
 	   instrucaoSql = `select * from ong where estado = '${estado}'`;
 	} else if (env == 'production') {
 		// abaixo, escreva o select de dados para o SQL Server

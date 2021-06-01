@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="shortcut icon" href="assets/img/cocarpng.png">
+    <script src="assets/script/funcoes.js"></script>
     <title>login</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
             <p>Senha</p>
             <input type="password" name="senha" id="" placeholder="insira sua senha">
             <input type="submit" value="entrar">
-            <a href="a">esqueci a senha</a> <br>
+            
             <a href="cadastro.html">Cadastre-se</a>
             
 
@@ -50,6 +51,8 @@
                 });
 
             } else {
+
+                alert ('usuário ou senha incorretos!')
 
                 console.log('Erro de login!');
 
