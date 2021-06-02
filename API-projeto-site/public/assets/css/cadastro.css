@@ -82,6 +82,16 @@ h1 {
     transition: 0.5s;
 }
 
+.cadastro select {
+    background-color: #000;
+    height: 30px;
+    width: 70px;
+    color: white;
+    border-radius: 15px;
+    margin: 10px 0px 10px 0px;
+    padding-left: 13px;
+}
+
 .cadastro a {
     font-weight: bold;
     text-decoration: none;

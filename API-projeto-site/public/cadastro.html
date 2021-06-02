@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/cadastro.css">
     <link rel="shortcut icon" href="assets/img/cocarpng.png">
+    <script src="assets/script/funcoes.js"></script>
     <title>cadastro</title>
 </head>
 <body>
@@ -14,12 +15,42 @@
         <h1>Cadastro</h1>
         <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
 
-            <p>Nome de usuário:</p>
+            <p>Nome de Usuário:</p>
             <input type="text" name="nome" id="" placeholder="insira seu nome de usuário">
-            <p>cidade:</p>
+            <p>Cidade:</p>
             <input type="text" name="cidade" id="" placeholder="insira sua cidade">
-            <p>estado:</p>
-            <input type="text" name="estado" id="" placeholder="insira a sigla do seu estado">
+            <p>Estado:</p>
+            <select name="estado" id="">
+                <option value="AC">AC</option>
+               <option value="AL">AL</option>
+               <option value="AP">AP</option>
+               <option value="AM">AM</option>
+               <option value="BA">BA</option>
+               <option value="CE">CE</option>
+               <option value="DF">DF</option>
+               <option value="ES">ES</option>
+               <option value="GO">GO</option>
+               <option value="MA">MA</option>
+               <option value="MT">MT</option>
+               <option value="MS">MS</option>
+               <option value="MG">MG</option>
+               <option value="PA">PA</option>
+               <option value="PB">PB</option>
+               <option value="PR">PR</option>
+               <option value="PE">PE</option>
+               <option value="PI">PI</option>
+               <option value="RN">RN</option>
+               <option value="RS">RS</option>
+               <option value="RJ">RJ</option>
+               <option value="RO">RO</option>
+               <option value="RR">RR</option>
+               <option value="SC">SC</option>
+               <option value="SP">SP</option>
+               <option value="SE">SE</option>
+               <option value="TO">TO</option>
+
+            </select>
+           <!--  <input type="text" name="estado" id="" placeholder="insira a sigla do seu estado"> -->
             <p>Email:</p>
             <input type="text" name="login" id="" placeholder="insira seu email">
             <p>Senha:</p>
@@ -31,7 +62,8 @@
         </form>
     </div>
 
-    
+    <img src="assets/img/terrapessoas.gif" id="img_aguarde" style="display: none; width:100px">
+
     <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
         Erro no cadastro
     </div>
@@ -39,7 +71,7 @@
 </html>
 <script>
      function cadastrar() {
-        
+        //aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
             method: "POST",
@@ -48,7 +80,7 @@
             
             if (response.ok) {
 
-                window.location.href='login.html';
+                window.location.href='sucesso.html';
 
             } else {
 
